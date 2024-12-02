@@ -11,6 +11,8 @@ categories = ["database"]
 keywords = ["database", "postgres", "postgresql", "extension"]
 
 [features]
+EPAS = ["pgrx/EPAS"]
+PGE = ["pgrx/PGE"]
 default = ["cshim"] # ["cshim", "pg15"] no PG version by default; needs to come from importing parent
 cshim = ["pgrx/cshim"]
 pg14 = ["pgrx/pg14", "pgrx-tests/pg14"]
